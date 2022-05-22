@@ -34,9 +34,7 @@ const pictureUsers = [
       src: "https://i.pravatar.cc/150?u=a092581d4ef9026700d",
       color: "gradient",
     },
-  ];
-  
-
+  ]  
 
   return (
     <NextUIProvider>
@@ -49,9 +47,9 @@ const pictureUsers = [
       squared
       size='xl'
       />
-  {pictureUsers.map((data) => 
-    <Avatar src={data.src} color={data.color} size="xl" bordered/>
-  )}
+      {pictureUsers.map((data) => 
+        <Avatar src={data.src} color={data.color} size="xl" bordered/>
+      )}
     </NextUIProvider>
   );
 }
